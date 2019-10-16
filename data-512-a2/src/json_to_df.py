@@ -74,9 +74,17 @@ def json_path_to_dataframe(path_to_json_file):
     
     # Use model score class to choose values we want to add to a df
 
+    # model_scores = []
+    # for key, value in all_score_ids_mapped_to_info.items():
+    #     model_scores.append([key, value.get("prediction")])
+    #     model_scores.append([key, all_score_ids_mapped_to_info.get("prediction", 0)])
+
     model_scores = []
     for key, value in all_score_ids_mapped_to_info.items():
-        model_scores.append([key, value.get("prediction")])
+        try:
+            model_scores.append([key, value.get("prediction")])
+        except AttributeError:
+            model_scores.append([key, 0])
     
     return pandas.DataFrame(model_scores)
 
