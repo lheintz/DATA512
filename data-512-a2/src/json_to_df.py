@@ -5,21 +5,17 @@ from json import load
 
 class ModelScore:
     __slots__ = ("identifier", "prediction", "probabilities", "stub")
-    # slots are a way to tell python what values you'll allow as part of the object
-    # this allows me to do what you see below with __repr__, which is just
-    # me over-riding how the object will print out for the sake of explanation
+    # slots used to choose which values will be a part of the object 
 
     def __init__(
         self, identifier: int = None, prediction: str = None, probabilities: dict = None
     ):
-        # I made these names up, guessing what these mean
-        # Something else could make more sense
-        # You could also break the probabilities out more, I've shown one example
         self.identifier = identifier
         self.prediction = prediction
         self.probabilities = probabilities
         self.stub = self.probabilities.get("Stub")
 
+    # Method to print outputs nicely if desired for debugging
     def __repr__(self):
         string = "{"
         for index, key in enumerate(self.__slots__):
@@ -34,13 +30,37 @@ class ModelScore:
 class JSONParser:
     @staticmethod
     def parse(path_to_json_file):
+        """ 
+        The sub-function to turn the json file of the raw
+        outputs from the ORES API call in to a dictionary. 
+  
+        Parameters: 
+            path_to_json_file (string): The path to the raw json file returned from the API call
+          
+        Returns: 
+            json_as_dictionary (dictionary): A python dictionary object of the original json
+        """
+
+        # Returns json as a dictionary
+
         with open(path_to_json_file) as json_file:
             json_as_dictionary = load(json_file)
-            # returns a dictionary, included in the standard python library
-            # https://docs.python.org/3/library/json.html#json.load
         return json_as_dictionary
 
 def json_path_to_dataframe(path_to_json_file):
+    """ 
+        The function to turn the json file of the raw
+        outputs from the ORES API call in to a clean df
+        in the format that we want. 
+  
+        Parameters: 
+            path_to_json_file (string): The path to the raw json file returned from the API call
+          
+        Returns: 
+            model_scores (dataframe): Returns the predicted scores from the model for each Revision Id queried
+    """
+    # Use json parser class to parse json in to a dictionary
+
     json_parser = JSONParser()
     json_as_dictionary = json_parser.parse(path_to_json_file)
     
@@ -52,12 +72,15 @@ def json_path_to_dataframe(path_to_json_file):
             all_scores.get(score).get("wp10").get("score")
         )
     
+    # Use model score class to choose values we want to add to a df
+
     model_scores = []
     for key, value in all_score_ids_mapped_to_info.items():
         model_scores.append([key, value.get("prediction")])
     
     return pandas.DataFrame(model_scores)
 
+# Run json to df function and do some clean up 
 
 path = os.path.join("data_raw", "ores-json-data-raw.json")
 df = json_path_to_dataframe(path)
