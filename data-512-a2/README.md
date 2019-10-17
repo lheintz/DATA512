@@ -80,6 +80,8 @@ This assignment code is released under the MIT license in this repo.
 
 The politician page count data is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
+The ORES Rest API is licensed by CC-SA.
+
 ## Notes for Reuse / Special Considerations
 
 Some notes in regards to the analysis work done. For the analysis of the relative number of good quality articles versus total articles, countries with zero good quality articles were discarded. This is because items with zero good articles sometimes only had a handful of articles written at all. We are more interested in countries with a huge disparity between good articles and total articles, because this could indicate something about the bias in the overall sample set for this country. For this reason, items with zero good articles were discarded in favor of items with at least 1 good article so that a proper proportion could be calculated. 
