@@ -50,7 +50,7 @@ requests: https://pypi.org/project/requests/2.7.0/
 json: https://docs.python.org/3/library/json.html   
 
 ## Files Created
-This notebook creates 11 CSV files of data extracted and compiled as part of this analysis. Specific details as to the contents of these CSVs and the process to create them is in the Jupyter Notebook in this repo. For all intents and purposes the final cleaned data set is `data_clean` > `wp_wpds_politicians_by_country.csv`, which contains the population data, page data, and prediction data all joined in one table.
+This notebook creates 11 CSV files of data extracted and compiled as part of this analysis. Specific details as to the contents of these CSVs and the process to create them is in the Jupyter Notebook in this repo. For all intents and purposes the final cleaned data set is `results` > `wp_wpds_politicians_by_country.csv`, which contains the population data, page data, and prediction data all joined in one table.
 
 data_clean  
 >    GeographyRollUp.csv  
@@ -66,6 +66,9 @@ results
     table4.csv  
     table5.csv  
     table6.csv  
+    wp_wpds_politicians_by_country.csv  
+
+In the process of parsing the json files from the ORES API, a couple of additional files were generated and overwritten in the data_raw folder as a script ran to process the download of information. In this process, not all revision IDs were found to have predictions returned from the ORES model. Revision IDs for which no predictions were found are in the  `data_clean` > `ores_no_score.csv`. 
 
 ## Visualizations Created
 
