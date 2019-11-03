@@ -7,18 +7,27 @@
  ----
 
 ## Motivation
-While I am studying part time to become a data scientist, my full-time job is at The Boeing Company. There has recently been a lot of news and media on Boeing surrounding the 737Max crashes. This brings attention to air travel, and the safety of air travel. 
+
+While I am studying part time to become a data scientist, my full-time job is at The Boeing Company. There has recently been a lot of news and media on Boeing surrounding the 737Max crashes. This brings attention to air travel and the safety of air travel. I believe more people than ever are interested in learning more about air travel safety and the history air travel safety. I hope that I can provide some scientific, fact-based, data-based information and conclusions that a niave reader can understand and find value in. I will focus on United States air travel specifically.
+
+I hope to learn about the trends in aviation accidents and fatalies over time. I hope to learn more about correlative factors to relative safety of a flight. I also hope to learn more about the differences in accident and fatality rates between commericial and private aviation in the United States.
 
 ----
 
 ## Data
 
+`What dataset do you plan to use, and why? Summarize what is represented in the dataset; Link to the dataset, and specify license/terms of use; Briefly justify why this dataset is relevant to your problem statement; Highlight any possible ethical considerations to using this dataset (and say why or why not).`
+
+> There are multiple data sets that I plan to use in tandem to complete my analysis. The most detailed data set is the FAA Accident & Incident Data System - which contains a detailed record for every single accident and incident from ~1978 to ~2015 (with MM/DD/YYYY available for each) for any type of United States flight (private, commericial, scheduled, unschedule, cargo, passenger). Examples of the relevant fields of data available for each row item are: Local Event Date, Event City, Event State, Event Airport, Event Type, Aircraft Damage, Flight Phase, Aircraft Make, Aircraft Model, Aircraft Series, Operator, Primary Flight Type, Total Fatalities, Total Injuries, PIC Certificate Type, PIC Flight Time Total Hrs, PIC Flight Time Total Make-Model.   
+The other data sets are moer roll up riles
+
 | File Name |    Table Name    | Years | Data Source |
 | ------ | ------------ | ------- | ----|
+| faaAccidentIncidentDataSystem.csv | FAA Accident and Incident Data System (AIDS) | 1978 - 2015 | https://www.asias.faa.gov/apex/f?p=100:11:::NO::: |
 | accidentsAccidentRates_scheduledPass.csv | Accidents and Accident Rates by NTSB Classification, 1995 through 2014, for U.S. Air Carriers Operating Under 14 CFR 121 | 1983 - 2014| https://catalog.data.gov/dataset/accidents-and-accident-rates-by-ntsb-classification-1995-through-2014-for-u-s-air-carriers |
 | accidentsFatalitiesRates_airlines.csv | Accidents, Fatalities, and Rates, 1995 through 2014, for U.S. Air Carriers Operating Under 14 CFR 121, Scheduled and Nonscheduled Service (Airlines) | 1983 - 2014| https://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-for-u-s-air-carriers-operating-under-14-c-dae36|
 | accidentsFatalitiesRates_genAv.csv | Accidents, Fatalities, and Rates, 1995 through 2014, U.S. General Aviation | 1975 - 2014 | https://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-u-s-general-aviation |
-| faaAccidentIncidentDataSystem.csv | FAA Accident and Incident Data System (AIDS) | 1978 - 2015 | https://www.asias.faa.gov/apex/f?p=100:11:::NO::: |
+
 
 ## License 
 > All data above information is federal government data, and therefore fits under the following free and open license: "U.S. Federal data available through [Data.gov](https://www.data.gov/privacy-policy#license) is offered free and without restriction. Data and content created by government employees within the scope of their employment are not subject to domestic copyright protection under 17 U.S.C. § 105." 
@@ -29,6 +38,7 @@ While I am studying part time to become a data scientist, my full-time job is at
 
 | Term   | Definition |
 | ----- | --- |
+| NTSB | National Transportation Safety Board |
 | [14 CFR-121](https://www.govinfo.gov/app/details/CFR-2011-title14-vol3/CFR-2011-title14-vol3-part121/context) | Specification of Operating Requirements: Domestic, Flag, and Supplemental Operations, more than 10 passengers, scheduled service |
 | [Domestic Operation](https://www.govinfo.gov/app/details/CFR-2011-title14-vol3/CFR-2011-title14-vol3-part121/context) | Departure and Arrival Airport both within US |
 | [Flag Operation](https://www.govinfo.gov/app/details/CFR-2011-title14-vol3/CFR-2011-title14-vol3-part121/context) | Departure from US Airport, Arrival in non-US Airport |
