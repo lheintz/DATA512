@@ -7,7 +7,7 @@
  ----
 
 ## Motivation
-While I am studying part time to become a data scientist, my full-time job is at The Boeing Company. There has recently been a lot of news and media on Boeing surrounding the 737Max crashes
+While I am studying part time to become a data scientist, my full-time job is at The Boeing Company. There has recently been a lot of news and media on Boeing surrounding the 737Max crashes. This brings attention to air travel, and the safety of air travel. 
 
 ----
 
@@ -43,6 +43,9 @@ While I am studying part time to become a data scientist, my full-time job is at
 
 ## Unknowns & Dependencies
 
+The time series nature of the data used in this projects leads to some unknowns. Specifically because of my lack of experience working with time series data. Not all of the increments of time are the same for each data set (some are more granual than others). This presents a few unknowns on how the data will ultimately be compiled and used.
+
+Additionally, the fact that there are 4 different data sets presents some challenges. They will need to be cleaned and joined together. Again, there are some dependencies on my ability to successfully and accurately join all this data in a limited amount of time (4 weeks). There may be some manual matching and comparison required. Realistically, I may be required to narrow down the scope of my data sets to the time range which all 4 data sets have in common. This is make my overall data set smaller in the end. In addition, I may be forced in some cases to change the granularity of the time series data in order to make my data clear and consistent.
 
 ----
 
