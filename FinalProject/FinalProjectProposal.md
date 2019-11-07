@@ -1,4 +1,4 @@
-# <center> Final Project Proposal </center>
+# <center> A4 Final Project Proposal </center>
 <center> DATA 512 </center>
 <center> Human Centered Data Science </center>
 <center> Lauren Heintz  </center>
@@ -28,12 +28,12 @@ I hope to learn about the trends in aviation accidents and fatalies over time. I
      
       
 
-| File Name |    Table Name    | Years | Data Source |
-| ------ | ------------ | ------- | ----|
-| faaAccidentIncidentDataSystem.csv | FAA Accident and Incident Data System (AIDS) | 1978 - 2015 | https://www.asias.faa.gov/apex/f?p=100:11:::NO::: |
-| accidentsAccidentRates_scheduledPass.csv | Accidents and Accident Rates by NTSB Classification, 1995 through 2014, for U.S. Air Carriers Operating Under 14 CFR 121 | 1983 - 2014| https://catalog.data.gov/dataset/accidents-and-accident-rates-by-ntsb-classification-1995-through-2014-for-u-s-air-carriers |
-| accidentsFatalitiesRates_airlines.csv | Accidents, Fatalities, and Rates, 1995 through 2014, for U.S. Air Carriers Operating Under 14 CFR 121, Scheduled and Nonscheduled Service (Airlines) | 1983 - 2014| https://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-for-u-s-air-carriers-operating-under-14-c-dae36|
-| accidentsFatalitiesRates_genAv.csv | Accidents, Fatalities, and Rates, 1995 through 2014, U.S. General Aviation | 1975 - 2014 | https://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-u-s-general-aviation |
+| Source | File Name |    Table Name    | Years | Data Source |
+| ---- | ------ | ------------ | ------- | ----|
+| 1 | faaAccidentIncidentDataSystem.csv | FAA Accident and Incident Data System (AIDS) | 1978 - 2015 | https://www.asias.faa.gov/apex/f?p=100:11:::NO::: |
+| 2 | accidentsAccidentRates_scheduledPass.csv | Accidents and Accident Rates by NTSB Classification, 1995 through 2014, for U.S. Air Carriers Operating Under 14 CFR 121 | 1983 - 2014| https://catalog.data.gov/dataset/accidents-and-accident-rates-by-ntsb-classification-1995-through-2014-for-u-s-air-carriers |
+| 3 | accidentsFatalitiesRates_airlines.csv | Accidents, Fatalities, and Rates, 1995 through 2014, for U.S. Air Carriers Operating Under 14 CFR 121, Scheduled and Nonscheduled Service (Airlines) | 1983 - 2014| https://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-for-u-s-air-carriers-operating-under-14-c-dae36|
+| 4 | accidentsFatalitiesRates_genAv.csv | Accidents, Fatalities, and Rates, 1995 through 2014, U.S. General Aviation | 1975 - 2014 | https://catalog.data.gov/dataset/accidents-fatalities-and-rates-1995-through-2014-u-s-general-aviation |
 
 
 ## License 
@@ -50,6 +50,8 @@ Additionally, the fact that there are 4 different data sets presents some challe
 Realistically, due to time constraints, it is possible the analysis may only consist of commercial flights, as I have more datasets which are applicable to this. Additionally, I imagine this is a more interesting topic to the general public, so if the data set is rich for airlines I may not analyze private flight data.
 
 ----
+
+# A5 Final Project Plan Work In Progress
 
 ## Background Research
 
