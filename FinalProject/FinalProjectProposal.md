@@ -68,6 +68,11 @@ Realistically, due to time constraints, it is possible the analysis may only con
 | [Accident, Injury](data_raw/accidentsAccidentRates_scheduledPass.csv) | Injury - a nonfatal accident with at least one serious injury and without substantial damage to a Part 121 aircraft. |
 | [Accident, Damage](data_raw/accidentsAccidentRates_scheduledPass.csv) | Damage - an accident in which no person was killed or seriously injured, but in which any aircraft was substantially damaged. |
 
+https://www.sbs.com.au/news/how-safe-is-flying-here-s-what-the-statistics-say
+https://www.anxieties.com/flying-howsafe.php
+https://www.bloomberg.com/news/articles/2019-05-30/flying-has-become-more-dangerous-don-t-just-blame-boeing
+https://www.theweek.co.uk/97155/fact-check-is-flying-safe
+
 ----
 
 ## Notes for Reuse
@@ -77,3 +82,11 @@ For these data sets, accidents which were caused by an illegal act such as __sui
 Some data is incomplete for 2015 and some data is incomplete for 2014, so only data through 2013 will be utilized. This is because a complete, verified, factual data is released every 5 years or so by the FAA. The next big release of records will be mid 2020 with a data set mostly complete through 2019.
 
 Some of these data sets had headers at the top of the CSV or used two rows for the column label. These headers were deleted and dual row column labels combined in to a single row prior to other preprocessing steps in the Jupyter notebook.
+
+
+
+Geographic - what airports do people crash most out of? 
+Saboatge vs just accidents? whats more likely?
+What kind of plane crashes the most 
+
+## 
