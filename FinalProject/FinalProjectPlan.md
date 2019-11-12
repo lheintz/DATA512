@@ -10,9 +10,9 @@
 
 While I am studying part time to become a data scientist, my full-time job is at The Boeing Company. There has recently been a lot of news and media on Boeing surrounding the 737Max crashes. This brings attention to air travel and the safety of air travel. I believe more people than ever are interested in learning more about air travel safety and the history air travel safety. I also believe there is a lot of confusion and misleading of late, in part due to the media attention on the aviation industry. 
 
-For a naive reader, it may be hard to make sense of all this. Those who do not work at an aviation company may want to skip the jargon and get the facts on air travel safety. 
+For a naive reader, it may be hard to make sense of all this aerospace jargon being thrown around in the media. Busy travelers who do not work at an aviation company will want to skip straight to the facts on air travel safety. 
 
-I hope that I can provide some scientific, fact-based, data-based information and conclusions that any adult reader can understand and find value in. This analysis will also hopefully provide a historical lens from which to view the recent events. I will focus on United States air travel specifically.
+I hope that I can provide some scientific, fact-based, data-based information to these busy American travelers. Hopefully my research can provide conclusions that any adult reader can understand and find value in. This analysis will also strive to provide a historical lens from which to view the recent events. I will focus on United States air travel specifically.
 
 In my analysis I plan to investigate the trends in aviation accidents and fatalies over time. I will also look at tangible factors that all readers can understand and use descriptive statistics and visualizations to bring light to patterns if they exist. 
 
@@ -39,10 +39,30 @@ In my analysis I plan to investigate the trends in aviation accidents and fatali
 
 ## Background Research
 
-https://www.sbs.com.au/news/how-safe-is-flying-here-s-what-the-statistics-say
-https://www.anxieties.com/flying-howsafe.php
-https://www.bloomberg.com/news/articles/2019-05-30/flying-has-become-more-dangerous-don-t-just-blame-boeing
-https://www.theweek.co.uk/97155/fact-check-is-flying-safe
+Upon some google searching about the safety of flight, one article brings up some interesting statistics which immediately point to the overwhelming safety of air travel in comparison to other modes of transportation. **"There are a range of estimates out there, but based on its analysis of US Census data, it puts the odds of dying as a plane passenger at 1 in 205,552. That compares with odds of 1 in 4,050 for dying as a cyclist; 1 in 1,086 for drowning, and 1 in 102 for a car crash.**" ([SBS](https://www.sbs.com.au/news/how-safe-is-flying-here-s-what-the-statistics-say)) This article goes on to list some numbers about accidents, however, it only lists accidents from the US and Canada from 2013 to 2017. After that, the analysis looks at all countries, which my analysis does not. It appears to use the US National Safety Council data, not FAA data. 
+
+Another top search result, a self help [blog](https://www.anxieties.com/flying-howsafe.php) for people with flying anxiety also compares air travel to other modes of travel. It states that **"In fact, based on this incredible safety record, if you did fly every day of your life, probability indicates that it would take you nineteen thousand years before you would succumb to a fatal accident. Nineteen thousand years!"** An additional comparison to the dangers of driving points out that **a sold-out 727 jet would have to crash every day of the week, with no survivors, to equal the highway deaths per year in this country."**
+
+It points to outside sources for the following numbers:  
+__DEATH BY: YOUR ODDS__  
+Cardiovascular disease: 1 in 2  
+Smoking (by/before age 35): 1 in 600  
+Car trip, coast-to-coast: 1 in 14,000  
+Bicycle accident: 1 in 88,000  
+Tornado: 1 in 450,000  
+Train, coast-to-coast: 1 in 1,000,000  
+Lightning: 1 in 1.9 million  
+Bee sting: 1 in 5.5 million  
+U.S. commercial jet airline: 1 in 7 million  
+[Sources: Natural History Museum of Los Angeles County, Massachusetts   Institute of Technology, University of California at Berkeley] 
+
+These numbers vary significantly from the previous article, which could have to do with the date that it was written. It could also simply be because these odds are hard to estimate. Not only do you need to use an appropriate accident, you also need to appropriately estimate how often someone is flying or driving. For this very reason, I did not seek to incorporate other modes of transportation in to my analysis. The data was simply not available or accurate. In any case, it does not deep dive in to accidents, pilots, or any sort of time series analysis.
+
+Finally, probably the most relevant result I found was a [bloomberg article](https://www.bloomberg.com/news/articles/2019-05-30/flying-has-become-more-dangerous-don-t-just-blame-boeing) warning that flying has become more dangerous recently. This article is touching on the same hot topic that I wish to address. While it does include one bar chart of total annual fatalities from 2010 to 2018, it does not include any other visuals. Even this visual is based on the world passenger airline fatality data, not the United States. It does not appear to be the same data set as mine, and the article quickly moves on to other factors in airplane safety such as demand for speed and cost cutting by airlines, as well as an increased burden of safety regulation.
+
+I am excited say that despite the recent media craze, there really doesn't seem to be many data driven articles or publications recently to appeal to the general public in regards to the safety of air travel. This means that my research could really provide some benefit to the general public. It does not appear that my work is directly building off of anyone's previous. Since FAA data is widely available, I would not be surprised if someone had already done this analysis, however, it was not published and popularized anywhere that I found.
+
+
 
 | Term   | Definition |
 | ----- | --- |
@@ -115,7 +135,7 @@ For each research question proposed, I will now explain my methodology for this 
 -----
 
 ## License 
-> All data above information is federal government data, and therefore fits under the following free and open license: "U.S. Federal data available through [Data.gov](https://www.data.gov/privacy-policy#license) is offered free and without restriction. Data and content created by government employees within the scope of their employment are not subject to domestic copyright protection under 17 U.S.C. § 105." 
+All data above information is federal government data, and therefore fits under the following free and open license: "U.S. Federal data available through [Data.gov](https://www.data.gov/privacy-policy#license) is offered free and without restriction. Data and content created by government employees within the scope of their employment are not subject to domestic copyright protection under 17 U.S.C. § 105." 
 
 ----
 
@@ -142,7 +162,6 @@ Some of these data sets had headers and footers, or used two rows for the column
 ## Other External References
 [1] https://www.govinfo.gov/app/details/CFR-2011-title14-vol3/CFR-2011-title14-vol3-part121/context  
 [2] https://catalog.data.gov/dataset/air-carrier-occurrences-involving-illegal-acts-sabotage-suicide-or-terrorism-1995-through-  
-[3]   
-[4]  
-[5] 
-[6]
+[3] https://www.sbs.com.au/news/how-safe-is-flying-here-s-what-the-statistics-say  
+[4] https://www.anxieties.com/flying-howsafe.php  
+[5] https://www.bloomberg.com/news/articles/2019-05-30/flying-has-become-more-dangerous-don-t-just-blame-boeing  
