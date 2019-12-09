@@ -70,7 +70,33 @@ Finally, perhaps the most important reason for a human centered analysis on the 
 
 ### faaAccidentIncidentDatabaseSystem.csv
 
-## STILL NEED TO ADD DATA HERE
+| Variable Name | Data Type | 
+| --- | --- |
+| AIDS Report Number | An ID composed of the date timestamp (DateTime) |
+| Local Event Date | Date |
+| Event City | Full city name (string) |
+| Event State | Two letter state abbreviation (str) |
+| Event Airport | Airport code abbreviation (str) |
+| Event Type | Str |
+| Aircraft Damage | Level of damage sustained by plane (str) |
+| Flight Phase | Str |
+| Aircraft Make | Str |
+| Aircraft Model | Str |
+| Aircraft Series | Str |
+| Operator | Name of operator if commercially operated (str) |
+| Primary Flight Type | Str |
+| Flight Conduct Code | Str |
+| Flight Plan Filed Code | Str |
+| Aircraft Registration Nbr | Str |
+| Total Fatalities | Int |
+| Total Injuries | Int |
+| Aircraft Engine Make | Str |
+| Aircraft Engine Model | Str |
+| Engine Group Code | Str |
+| Nbr of Engines | Int |
+| PIC Certificate Type | Str |
+| PIC Flight Time Total Hrs | Int |
+| PIC Flight Time Total Make-Model | Int |
 
 # Files
 
