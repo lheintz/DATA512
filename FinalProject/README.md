@@ -18,6 +18,68 @@ Second, air travel has become increasingly popular over the past 3 decades, whic
 
 Finally, perhaps the most important reason for a human centered analysis on the topic: the laws of aerodynamics are complicated! So complicated that a graduate level degree in an aeronautical field is required to truly understand how planes work. For a naive reader not a part of the aerospace industry, it is hard to bridge this gap to truly understand the issues that the industry faces. This gap in understanding of how planes work leads to a gap in trust between the customers and the products. If customers don't understand what factors make a plane safe or not, how can they make an informed decision? How will they know whether or not to trust this flying metal bird in the sky? For the future of the aerospace industry, we must make products our customers have confidence in! This is why this type of work is even more important.
 
+# Files
+
+### Final Project
+
+| Name | Type | Description |
+| --- | --- | ---|
+| data_raw | Folder | Contains all the data pre-processing stage |
+| data_clean | Folder | Contains all the cleaned, post-processed data|
+| src | Folder | Contains the analysis source code and final report Jupyter notebook - primary A7 deliverable. |
+| results | Folder | Contains images and csv's of all the visuals and tables generated in the Jupyter notebook. |
+| `FinalProjectProposal.md` | File | A4 Deliverable |
+| `FinalProjectPlan.md` | File | A5 Deliverable |
+| `DATA 512 HCDS Final Presentation.pdf` | File | A6 Deliverable |
+| `LICENSE.md` | File | License for project repo. |
+| `README.md` | File | README for project repo. |
+
+data_raw
+> * accidentsAccidentRates_scheduledPass.csv
+> * accidentsFatalitiesRates_airlines.csv
+> * accidentsFatalitiesRates_genAv.csv
+> * faaAccidentIncidentDataSystem.csv
+
+data_clean
+> * airline_aggregate.csv
+> * genav_aggregate.csv
+
+src
+> * Aviation Analysis.ipynb
+> * Aviation Analysis.html
+
+results
+> * B-727.jpg
+> * Cessna172S.jpg
+> * Cessna180.jpg
+> * Cessna182.jpg
+> * Cessna206.jpg
+> * Cessna210.jpg
+> * DC-3.jpg
+> * DHC-6.jpg
+> * M-20.jpg
+> * PA-28.jpg
+> * PIC_experience_hours.png
+> * accidents_bars.png
+> * accidents_lines.png
+> * accidents_major_hours_lines.png
+> * accidents_miles_lines.png
+> * accidents_minor_hours_lines.png
+> * departures.png
+> * fatalities_by_make_model.csv
+> * fatalities_hours_lines.png
+> * fatalities_lines.png
+> * fatalities_miles_lines.png
+> * hours_bars.png
+> * incidents_by_PIC_type.csv
+> * incidents_by_make_model.csv
+> * miles.png
+> * public_private_accidents.png
+> * public_private_accidents_hours.png
+> * public_private_fatalities.png
+> * public_private_fatalities_hours.png
+> * public_private_hours.png	
+
 # Data 
 
 | Source | File Name |    Table Name    | Years | Data Source |
@@ -97,67 +159,6 @@ Finally, perhaps the most important reason for a human centered analysis on the 
 | PIC Certificate Type | Str |
 | PIC Flight Time Total Hrs | Int |
 | PIC Flight Time Total Make-Model | Int |
-
-# Files
-
-### Final Project
-
-| Name | Type | Description |
-| --- | --- | ---|
-| data_raw | Folder | Contains all the data pre-processing stage |
-| data_clean | Folder | Contains all the cleaned, post-processed data|
-| src | Folder | Contains the analysis source code and final report Jupyter notebook - primary A7 deliverable. |
-| `FinalProjectProposal.md` | File | A4 Deliverable |
-| `FinalProjectPlan.md` | File | A5 Deliverable |
-| `DATA 512 HCDS Final Presentation.pdf` | File | A6 Deliverable |
-| `LICENSE.md` | File | License for project repo. |
-| `README.md` | File | README for project repo. |
-
-data_raw
-> * accidentsAccidentRates_scheduledPass.csv
-> * accidentsFatalitiesRates_airlines.csv
-> * accidentsFatalitiesRates_genAv.csv
-> * faaAccidentIncidentDataSystem.csv
-
-data_clean
-> * airline_aggregate.csv
-> * genav_aggregate.csv
-
-src
-> * Aviation Analysis.ipynb
-> * Aviation Analysis.html
-
-results
-> * B-727.jpg
-> * Cessna172S.jpg
-> * Cessna180.jpg
-> * Cessna182.jpg
-> * Cessna206.jpg
-> * Cessna210.jpg
-> * DC-3.jpg
-> * DHC-6.jpg
-> * M-20.jpg
-> * PA-28.jpg
-> * PIC_experience_hours.png
-> * accidents_bars.png
-> * accidents_lines.png
-> * accidents_major_hours_lines.png
-> * accidents_miles_lines.png
-> * accidents_minor_hours_lines.png
-> * departures.png
-> * fatalities_by_make_model.csv
-> * fatalities_hours_lines.png
-> * fatalities_lines.png
-> * fatalities_miles_lines.png
-> * hours_bars.png
-> * incidents_by_PIC_type.csv
-> * incidents_by_make_model.csv
-> * miles.png
-> * public_private_accidents.png
-> * public_private_accidents_hours.png
-> * public_private_fatalities.png
-> * public_private_fatalities_hours.png
-> * public_private_hours.png	
 
 # License
 
